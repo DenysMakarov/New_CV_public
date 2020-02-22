@@ -1,0 +1,68 @@
+
+.header {
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(../img/bg_2.jpg);
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.header_nav_box {
+  position: absolute;
+  height: 50%;
+  margin-top: 15%;
+  //border: 1px solid red;
+  margin-left: 3rem;
+}
+
+.nav_head {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  color: rgba(255,255,255,1);
+  //border: 1px solid red;
+  height: 4rem;
+  transition: 0.2s;
+  font-family: 'Libre Franklin';
+  cursor: pointer;
+
+  p {
+    font-size: 8px;
+    color: rgba(255,255,255,0.5);
+    transition: 0.4s;
+    position: absolute;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-name: number_of_headers_apear;
+  }
+  h2{
+    transition: 0.2s;
+    margin-left: 1rem;
+    font-size: 26px;
+    margin-top: 0rem;
+
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    animation-name: nav_apear;
+    animation-delay: inherit;
+  }
+}
+
+.activeEl{
+  &>.head_h2{
+    margin-left: 1.8rem;
+    color: rgba(255,255,255,0.5);
+  }
+  &>.head_p{
+    margin-left: 3rem;
+    opacity: 0;
+  }
+}
+
+
+
