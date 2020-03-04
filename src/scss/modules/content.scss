@@ -92,6 +92,11 @@
   transition: 0.5s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  cursor: pointer;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
   opacity: 0;
   right: -100%;
@@ -107,20 +112,25 @@
 
 
 .section_box:nth-child(2) {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/slider/slider.jpg);
+  background-size: 110% 100%;
+
+  &:hover {
+    margin-top: -25px;
+  }
 }
 
 .section_box:nth-child(3) {
-  background-image: url(../img/3.jpg);
+  //background-image: url(../img/snikers/SportStore.jpg);
 }
 
 .section_box:nth-child(4) {
-  background-image: url(../img/4.jpg);
+  //background-image: url(../img/4.jpg);
 }
 
 .section_box:nth-child(5) {
   display: block;
-  background-image: url(../img/5.jpg);
+  //background-image: url(../img/5.jpg);
 }
 
 
@@ -131,7 +141,7 @@
   border-radius: 10px;
   perspective: 500px;
 
-  .section_box_cover_inside{
+  .section_box_cover_inside {
     background-image: url(../img/game/bg_game.jpg);
     width: 100%;
     height: 100%;
@@ -139,9 +149,9 @@
     transition: .3s;
     z-index: 1;
     border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     background-position: -150px 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -162,20 +172,19 @@
     //bottom: -15px;
     opacity: 0;
     //opacity: 1;
-    transition: .3s ;
+    transition: .3s;
     transition-delay: 4s;
     -webkit-background-size: cover;
     background-size: cover;
     border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
     //animation-name: card_apear;
     //animation-fill-mode: forwards;
     //animation-duration: 0.5s;
     //animation-delay: 0.8s;
-
 
 
     &:nth-child(1) {
@@ -184,42 +193,49 @@
       z-index: 100;
       //animation-delay: 0.9s;
     }
+
     &:nth-child(2) {
       background-image: url(../img/game/card_2.jpg);
       margin-left: 1%;
       z-index: 90;
       //animation-delay: 0.8s;
     }
+
     &:nth-child(3) {
       background-image: url(../img/game/card_3.jpg);
       margin-left: 12%;
       z-index: 80;
       //animation-delay: 0.7s;
     }
+
     &:nth-child(4) {
       background-image: url(../img/game/card_4.jpg);
       margin-left: 23%;
       z-index: 70;
       //animation-delay: 0.6s;
     }
+
     &:nth-child(5) {
       background-image: url(../img/game/card_5.jpg);
       margin-left: 34%;
       z-index: 60;
       //animation-delay: 0.5s;
     }
+
     &:nth-child(6) {
       background-image: url(../img/game/card_6.jpg);
       margin-left: 45%;
       z-index: 50;
       //animation-delay: 0.4s;
     }
+
     &:nth-child(7) {
       background-image: url(../img/game/card_7.jpg);
       margin-left: 56%;
       z-index: 40;
       //animation-delay: 0.3s;
     }
+
     &:nth-child(8) {
       background-image: url(../img/game/card_8.jpg);
       margin-left: 67%;
@@ -230,20 +246,114 @@
   }
 
 
-
-  .deactiveCards{
+  .deactiveCards {
     transform: rotateX(90deg) rotateY(10deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
     bottom: 170px;
     opacity: 0;
   }
 
-  .activeCards{
+  .activeCards {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
     bottom: -15px;
     opacity: 1;
   }
 }
 
-.section_box_cover_inside:hover{
+.section_box_cover_inside:hover {
   margin-top: -25px;
 }
+
+
+//// Snikers store //////
+
+.section_box_third {
+  box-sizing: border-box;
+
+  .box_third_first {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section_box_third_cover{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 10px;
+    transition: 0.3s;
+    &:hover{
+      margin-top: -15px;
+    }
+
+    .box_third_content {
+      width: 100%;
+      height: 450%;
+      box-sizing: border-box;
+      background-size: 100% 100%;
+      background-image: url(../img/snikers/snk_full.jpg);
+      perspective: 500px;
+    }
+
+  }
+
+
+
+  .box_third_ipad, .box_third_iphone{
+    width: 60%;
+    height: 55%;
+    //background: red;
+    position: absolute;
+    transition: .5s;
+    bottom: -7%;
+    left: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    transform: rotateX(0deg) rotateY(-80deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+    opacity: 0;
+    transition-delay: .2s;
+    overflow: auto;
+    border: 1px solid gray;
+
+    .box_third_ipad_cover{
+      width: 100%;
+      height: 450%;
+      position: relative;
+
+      background-image: url(../img/snikers/snk_full.jpg);
+      background-size: 100% 100%;
+    }
+  }
+
+  .box_third_iphone{
+    width: 22%;
+    height: 50%;
+    left: 100%;
+    transition-delay: .5s;
+
+
+    .box_third_iphone_cover{
+      width: 100%;
+      height: 600%;
+      background-image: url(../img/snikers/snk_iphone.jpg);
+      background-size: 100% 100%;
+    }
+  }
+
+  .box_third_ipad_active{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+    bottom: -7%;
+    left: -7%;
+    opacity: 1;
+  }
+  .box_third_iphone_active{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+    bottom: -7%;
+    left: 57%;
+    opacity: 1;
+  }
+}
+
+
+
+

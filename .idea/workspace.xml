@@ -3,19 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="297c0f0a-177e-4199-b301-84111af0094a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bg_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bg_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bg_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bg_game.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/day__1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/day__2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/day__3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/day__4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/day__5.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/modules/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/modules/keyframes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/keyframes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/modules/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/content.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +29,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,7 +43,8 @@
       <updated>1582294072297</updated>
       <workItem from="1582294073902" duration="422000" />
       <workItem from="1582296200789" duration="28697000" />
-      <workItem from="1583252509796" duration="22745000" />
+      <workItem from="1583252509796" duration="28298000" />
+      <workItem from="1583330913755" duration="4137000" />
     </task>
     <servers />
   </component>
@@ -64,9 +56,10 @@
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="0" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.822@0.23.1440.822" timestamp="1583252850522" />
-    <state x="435" y="48" key="SettingsEditor" timestamp="1583322221649">
-      <screen x="0" y="23" width="1440" height="822" />
+    <state x="435" y="48" key="SettingsEditor" timestamp="1583331225395">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state x="435" y="48" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1583331225395" />
     <state x="435" y="48" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1583322221649" />
     <state x="263" y="301" width="547" height="279" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1583252874441">
       <screen x="0" y="23" width="1440" height="822" />

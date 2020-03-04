@@ -1,8 +1,9 @@
 let navHeaderBtn = Array.from(document.getElementsByClassName("nav_head"));
 let navNumbersBtn = Array.from(document.getElementsByClassName("head_p"));
 let sectionBoxes = Array.from(document.getElementsByClassName("section_box"));
-let countSlide = 0;
+let navHeaderBoxes = document.getElementById("header_nav_box");
 
+let countSlide = 0;
 
 for (let i = 0; i < navHeaderBtn.length; i++) {
     navHeaderBtn[i].setAttribute("data-number_btn", i);
@@ -29,10 +30,8 @@ function cards_item_first(countSlide) {
         cards.map((el)=>{
             el.style.transitionDelay = countDelay+"s";
             countDelay = countDelay - 0.1;
-            // el.classList.add("deactiveCards");
             el.classList.add("activeCards");
             el.style.bottom = -15+"px";
-
             el.addEventListener("mouseover", function () {
                 el.style.transitionDelay = 0+"s";
                 el.style.bottom = 15+"px"
@@ -48,15 +47,41 @@ function cards_item_first(countSlide) {
             el.classList.remove("activeCards");
             el.classList.add("deactiveCards");
             el.style.bottom = 170+"px"
-
         })
     }
+}
+function snikers_gadgets_apear() {
+    let ipad = document.getElementById("box_third_ipad");
+    let iphone = document.getElementById("box_third_iphone");
+    ipad.addEventListener("mouseover", function () {
+        ipad.style.transitionDelay = 0+"s";
+        ipad.style.bottom = -1+"%";
+    });
+    ipad.addEventListener("mouseout", function () {
+        ipad.style.transitionDelay = 0+"s";
+        ipad.style.bottom = -7+"%";
+    });
+    iphone.addEventListener("mouseover", function () {
+        iphone.style.transitionDelay = 0+"s";
+        iphone.style.bottom = -1+"%";
+    });
+    iphone.addEventListener("mouseout", function () {
+        iphone.style.transitionDelay = 0+"s";
+        iphone.style.bottom = -7+"%";
+    });
 
 
+    if (countSlide == 2){
+        ipad.classList.add("box_third_ipad_active");
+        iphone.classList.add("box_third_iphone_active")
+    } else {
+        ipad.classList.remove("box_third_ipad_active");
+        iphone.classList.remove("box_third_iphone_active")
+    }
 }
 
 cards_item_first(countSlide);
-
+snikers_gadgets_apear();
 
 function activeElements() {
     for (let i = 0; i < navHeaderBtn.length; i++) {
@@ -73,14 +98,17 @@ function changeSlideOnClick() {
         el.addEventListener("mouseover", function () {
             countSlide = +el.dataset.number_btn;
             activeElements();
-            cards_item_first(countSlide)
+            cards_item_first(countSlide);
+            snikers_gadgets_apear();
+
         });
     });
 }
 
 
 function chahgeOnWheel() {
-    document.onwheel = function (e) {
+
+    navHeaderBoxes.onwheel = function (e) {
         let speed = e.deltaY;
         (speed > 0) ? countSlide = countSlide + 1 : countSlide = countSlide;
         (speed < 0) ? countSlide = countSlide - 1 : countSlide = countSlide;
