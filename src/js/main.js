@@ -79,9 +79,49 @@ function snikers_gadgets_apear() {
         iphone.classList.remove("box_third_iphone_active")
     }
 }
+function restaurant_gadgets_apear() {
+    let ipadr = document.getElementById("box_fourth_ipad");
+    let iphoner = document.getElementById("box_fourth_iphone");
+
+    ipadr.addEventListener("mouseover", function () {
+        ipadr.style.transitionDelay = 0+"s";
+        ipadr.style.bottom = -1+"%";
+    });
+    ipadr.addEventListener("mouseout", function () {
+        ipadr.style.transitionDelay = 0+"s";
+        ipadr.style.bottom = -7+"%";
+    });
+    iphoner.addEventListener("mouseover", function () {
+        iphoner.style.transitionDelay = 0+"s";
+        iphoner.style.bottom = -1+"%";
+    });
+    iphoner.addEventListener("mouseout", function () {
+        iphoner.style.transitionDelay = 0+"s";
+        iphoner.style.bottom = -7+"%";
+    });
+
+    if (countSlide == 3){
+        ipadr.classList.add("box_fourth_ipad_active");
+        iphoner.classList.add("box_fourth_iphone_active")
+    } else {
+        ipadr.classList.remove("box_fourth_ipad_active");
+        iphoner.classList.remove("box_fourth_iphone_active")
+    }
+}
+function gitApear() {
+    let gitArr = Array.from(document.getElementsByClassName("git"));
+    let countMarginTop = 0
+
+    gitArr.map((el)=>{
+        el.style.marginTop = countMarginTop+"px";
+        countMarginTop = countMarginTop + 85
+    })
+}
 
 cards_item_first(countSlide);
 snikers_gadgets_apear();
+restaurant_gadgets_apear();
+gitApear()
 
 function activeElements() {
     for (let i = 0; i < navHeaderBtn.length; i++) {
@@ -100,7 +140,8 @@ function changeSlideOnClick() {
             activeElements();
             cards_item_first(countSlide);
             snikers_gadgets_apear();
-
+            restaurant_gadgets_apear();
+            gitApear()
         });
     });
 }
@@ -116,6 +157,9 @@ function chahgeOnWheel() {
         (countSlide == -1) ? countSlide = navHeaderBtn.length - 1 : countSlide = countSlide;
         activeElements();
         cards_item_first(countSlide);
+        snikers_gadgets_apear();
+        restaurant_gadgets_apear();
+        gitApear()
     };
 }
 

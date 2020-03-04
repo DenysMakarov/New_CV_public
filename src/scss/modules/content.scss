@@ -94,9 +94,9 @@
   animation-fill-mode: forwards;
   cursor: pointer;
 
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  //-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  //-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  //box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
   opacity: 0;
   right: -100%;
@@ -263,6 +263,12 @@
   margin-top: -25px;
 }
 
+.section_box_second{
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 
 //// Snikers store //////
 
@@ -274,13 +280,14 @@
     height: 100%;
   }
 
-  .section_box_third_cover{
+  .section_box_third_cover {
     width: 100%;
     height: 100%;
     overflow: auto;
     border-radius: 10px;
-    transition: 0.3s;
-    &:hover{
+    transition: 0.2s;
+
+    &:hover {
       margin-top: -15px;
     }
 
@@ -296,8 +303,7 @@
   }
 
 
-
-  .box_third_ipad, .box_third_iphone{
+  .box_third_ipad, .box_third_iphone {
     width: 60%;
     height: 55%;
     //background: red;
@@ -315,7 +321,7 @@
     overflow: auto;
     border: 1px solid gray;
 
-    .box_third_ipad_cover{
+    .box_third_ipad_cover {
       width: 100%;
       height: 450%;
       position: relative;
@@ -325,14 +331,14 @@
     }
   }
 
-  .box_third_iphone{
+  .box_third_iphone {
     width: 22%;
     height: 50%;
     left: 100%;
     transition-delay: .5s;
 
 
-    .box_third_iphone_cover{
+    .box_third_iphone_cover {
       width: 100%;
       height: 600%;
       background-image: url(../img/snikers/snk_iphone.jpg);
@@ -340,13 +346,14 @@
     }
   }
 
-  .box_third_ipad_active{
+  .box_third_ipad_active {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
     bottom: -7%;
     left: -7%;
     opacity: 1;
   }
-  .box_third_iphone_active{
+
+  .box_third_iphone_active {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
     bottom: -7%;
     left: 57%;
@@ -354,6 +361,129 @@
   }
 }
 
+//// restaurant ////
 
+.section_box_fourth_cover {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: auto;
+  position: absolute;
+  transition: 0.2s;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+  &:hover {
+    margin-top: -15px;
+  }
+
+
+  .box_fourth_content {
+    width: 100%;
+    height: 450%;
+    box-sizing: border-box;
+    background-size: 100% 100%;
+    background-image: url(../img/restaurant/restaurant.jpg);
+    perspective: 500px;
+    border: 1px solid gray;
+  }
+}
+
+.box_fourth_ipad, .box_fourth_iphone {
+  width: 60%;
+  height: 55%;
+  position: absolute;
+  transition: .5s;
+  bottom: -7%;
+  left: 130%;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transform: rotateX(0deg) rotateY(-80deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+  opacity: 0;
+  transition-delay: .2s;
+  overflow: auto;
+  border: 1px solid gray;
+
+  .box_fourth_ipad_cover {
+    width: 100%;
+    height: 450%;
+    background-image: url(../img/restaurant/restaurant.jpg);
+    background-size: cover;
+  }
+}
+
+.box_fourth_iphone {
+  width: 22%;
+  height: 50%;
+  //left: -5%;
+
+  .box_fourth_iphone_cover {
+    width: 100%;
+    height: 723%;
+    background-image: url(../img/restaurant/restaurant_iphone.jpg);
+    background-size: contain;
+  }
+}
+
+.box_fourth_ipad_active {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+  bottom: -7%;
+  left: 45%;
+  opacity: 1;
+}
+
+.box_fourth_iphone_active {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+  bottom: -7%;
+  left: 35%;
+  opacity: 1;
+}
+
+//// git ////
+
+.git_link_box{
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 1);
+
+  @media screen and (max-width: 1440px) {
+    font-size: 1rem;
+  }
+
+  .git{
+    position: absolute;
+    right: 0;
+    font-family: 'Libre Franklin';
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 90%;
+    height: 20%;
+    text-align: center;
+    transition: 0.2s !important;
+
+    @media screen and (max-width: 1440px) {
+      line-height: 45px;
+    }
+
+    &:hover{
+      transition: 0.2s;
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      top: -10px;
+      right: 10px;
+    }
+  }
+
+
+}
 
 
