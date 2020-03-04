@@ -1,4 +1,4 @@
-
+//// header
 .header {
   margin: auto;
   -webkit-box-sizing: border-box;
@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
 }
+
 .header_nav_box {
   position: absolute;
   height: 50%;
@@ -24,7 +25,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: flex;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   //border: 1px solid red;
   height: 4rem;
   transition: 0.2s;
@@ -33,14 +34,15 @@
 
   p {
     font-size: 8px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     transition: 0.4s;
     position: absolute;
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
     animation-name: number_of_headers_apear;
   }
-  h2{
+
+  h2 {
     transition: 0.2s;
     margin-left: 1rem;
     font-size: 26px;
@@ -53,16 +55,195 @@
   }
 }
 
-.activeEl{
-  &>.head_h2{
+.activeEl {
+  & > .head_h2 {
     margin-left: 1.8rem;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
   }
-  &>.head_p{
+
+  & > .head_p {
     margin-left: 3rem;
     opacity: 0;
   }
 }
 
+///// section
+
+.section_content {
+  //border: 1px solid red;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  right: 10%;
+  perspective: 500px;
+}
+
+.section_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  //background-image: url(../img/1.jpg);
+  background-position: 50% 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  transition: 0.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  opacity: 0;
+  right: -100%;
+  transform: rotateX(0deg) rotateY(28deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+
+}
+
+.section_active {
+  opacity: 1;
+  right: 0;
+  transform: rotateX(2deg) rotateY(-4deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+}
 
 
+.section_box:nth-child(2) {
+  background-image: url(../img/2.jpg);
+}
+
+.section_box:nth-child(3) {
+  background-image: url(../img/3.jpg);
+}
+
+.section_box:nth-child(4) {
+  background-image: url(../img/4.jpg);
+}
+
+.section_box:nth-child(5) {
+  display: block;
+  background-image: url(../img/5.jpg);
+}
+
+
+.section_box_cover {
+  width: 100%;
+  height: 100%;
+  //background-image: url(../img/game/bg_game.jpg);
+  border-radius: 10px;
+  perspective: 500px;
+
+  .section_box_cover_inside{
+    background-image: url(../img/game/bg_game.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .3s;
+    z-index: 1;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-position: -150px 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .card {
+    transform: rotateX(90deg) rotateY(10deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+    //transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+    cursor: pointer;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    bottom: 170px;
+    //bottom: -15px;
+    opacity: 0;
+    //opacity: 1;
+    transition: .3s ;
+    transition-delay: 4s;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    //animation-name: card_apear;
+    //animation-fill-mode: forwards;
+    //animation-duration: 0.5s;
+    //animation-delay: 0.8s;
+
+
+
+    &:nth-child(1) {
+      background-image: url(../img/game/card_1.jpg);
+      margin-left: -10%;
+      z-index: 100;
+      //animation-delay: 0.9s;
+    }
+    &:nth-child(2) {
+      background-image: url(../img/game/card_2.jpg);
+      margin-left: 1%;
+      z-index: 90;
+      //animation-delay: 0.8s;
+    }
+    &:nth-child(3) {
+      background-image: url(../img/game/card_3.jpg);
+      margin-left: 12%;
+      z-index: 80;
+      //animation-delay: 0.7s;
+    }
+    &:nth-child(4) {
+      background-image: url(../img/game/card_4.jpg);
+      margin-left: 23%;
+      z-index: 70;
+      //animation-delay: 0.6s;
+    }
+    &:nth-child(5) {
+      background-image: url(../img/game/card_5.jpg);
+      margin-left: 34%;
+      z-index: 60;
+      //animation-delay: 0.5s;
+    }
+    &:nth-child(6) {
+      background-image: url(../img/game/card_6.jpg);
+      margin-left: 45%;
+      z-index: 50;
+      //animation-delay: 0.4s;
+    }
+    &:nth-child(7) {
+      background-image: url(../img/game/card_7.jpg);
+      margin-left: 56%;
+      z-index: 40;
+      //animation-delay: 0.3s;
+    }
+    &:nth-child(8) {
+      background-image: url(../img/game/card_8.jpg);
+      margin-left: 67%;
+      z-index: 30;
+      //animation-delay: 0.2s;
+    }
+
+  }
+
+
+
+  .deactiveCards{
+    transform: rotateX(90deg) rotateY(10deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+    bottom: 170px;
+    opacity: 0;
+  }
+
+  .activeCards{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
+    bottom: -15px;
+    opacity: 1;
+  }
+}
+
+.section_box_cover_inside:hover{
+  margin-top: -25px;
+}
