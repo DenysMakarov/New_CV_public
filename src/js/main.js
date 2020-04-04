@@ -26,52 +26,53 @@ function cards_item_first(countSlide) {
     let cards = Array.from(document.getElementsByClassName("card"));
     let countDelay = 1.1;
 
-    if (countSlide == 0){
-        cards.map((el)=>{
-            el.style.transitionDelay = countDelay+"s";
+    if (countSlide == 0) {
+        cards.map((el) => {
+            el.style.transitionDelay = countDelay + "s";
             countDelay = countDelay - 0.1;
             el.classList.add("activeCards");
-            el.style.bottom = -15+"px";
+            el.style.bottom = -15 + "px";
             el.addEventListener("mouseover", function () {
-                el.style.transitionDelay = 0+"s";
-                el.style.bottom = 15+"px"
+                el.style.transitionDelay = 0 + "s";
+                el.style.bottom = 15 + "px"
             });
             el.addEventListener("mouseout", function () {
-                el.style.transitionDelay = 0+"s";
-                el.style.bottom = -15+"px"
+                el.style.transitionDelay = 0 + "s";
+                el.style.bottom = -15 + "px"
             })
         })
-    } else if (countSlide != 0){
-        cards.map((el)=>{
-            el.style.transitionDelay = 0+"s";
+    } else if (countSlide != 0) {
+        cards.map((el) => {
+            el.style.transitionDelay = 0 + "s";
             el.classList.remove("activeCards");
             el.classList.add("deactiveCards");
-            el.style.bottom = 170+"px"
+            el.style.bottom = 170 + "px"
         })
     }
 }
+
 function snikers_gadgets_apear() {
     let ipad = document.getElementById("box_third_ipad");
     let iphone = document.getElementById("box_third_iphone");
     ipad.addEventListener("mouseover", function () {
-        ipad.style.transitionDelay = 0+"s";
-        ipad.style.bottom = -1+"%";
+        ipad.style.transitionDelay = 0 + "s";
+        ipad.style.bottom = -1 + "%";
     });
     ipad.addEventListener("mouseout", function () {
-        ipad.style.transitionDelay = 0+"s";
-        ipad.style.bottom = -7+"%";
+        ipad.style.transitionDelay = 0 + "s";
+        ipad.style.bottom = -7 + "%";
     });
     iphone.addEventListener("mouseover", function () {
-        iphone.style.transitionDelay = 0+"s";
-        iphone.style.bottom = -1+"%";
+        iphone.style.transitionDelay = 0 + "s";
+        iphone.style.bottom = -1 + "%";
     });
     iphone.addEventListener("mouseout", function () {
-        iphone.style.transitionDelay = 0+"s";
-        iphone.style.bottom = -7+"%";
+        iphone.style.transitionDelay = 0 + "s";
+        iphone.style.bottom = -7 + "%";
     });
 
 
-    if (countSlide == 2){
+    if (countSlide == 2) {
         ipad.classList.add("box_third_ipad_active");
         iphone.classList.add("box_third_iphone_active")
     } else {
@@ -79,28 +80,29 @@ function snikers_gadgets_apear() {
         iphone.classList.remove("box_third_iphone_active")
     }
 }
+
 function restaurant_gadgets_apear() {
     let ipadr = document.getElementById("box_fourth_ipad");
     let iphoner = document.getElementById("box_fourth_iphone");
 
     ipadr.addEventListener("mouseover", function () {
-        ipadr.style.transitionDelay = 0+"s";
-        ipadr.style.bottom = -1+"%";
+        ipadr.style.transitionDelay = 0 + "s";
+        ipadr.style.bottom = -1 + "%";
     });
     ipadr.addEventListener("mouseout", function () {
-        ipadr.style.transitionDelay = 0+"s";
-        ipadr.style.bottom = -7+"%";
+        ipadr.style.transitionDelay = 0 + "s";
+        ipadr.style.bottom = -7 + "%";
     });
     iphoner.addEventListener("mouseover", function () {
-        iphoner.style.transitionDelay = 0+"s";
-        iphoner.style.bottom = -1+"%";
+        iphoner.style.transitionDelay = 0 + "s";
+        iphoner.style.bottom = -1 + "%";
     });
     iphoner.addEventListener("mouseout", function () {
-        iphoner.style.transitionDelay = 0+"s";
-        iphoner.style.bottom = -7+"%";
+        iphoner.style.transitionDelay = 0 + "s";
+        iphoner.style.bottom = -7 + "%";
     });
 
-    if (countSlide == 3){
+    if (countSlide == 3) {
         ipadr.classList.add("box_fourth_ipad_active");
         iphoner.classList.add("box_fourth_iphone_active")
     } else {
@@ -108,12 +110,13 @@ function restaurant_gadgets_apear() {
         iphoner.classList.remove("box_fourth_iphone_active")
     }
 }
+
 function gitApear() {
     let gitArr = Array.from(document.getElementsByClassName("git"));
     let countMarginTop = 0
 
-    gitArr.map((el)=>{
-        el.style.marginTop = countMarginTop+"px";
+    gitArr.map((el) => {
+        el.style.marginTop = countMarginTop + "px";
         countMarginTop = countMarginTop + 85
     })
 }
@@ -165,4 +168,44 @@ function chahgeOnWheel() {
 
 changeSlideOnClick();
 chahgeOnWheel();
+
+
+function links() {
+    let gameLink = document.getElementById("linkOfGame");
+    let sliderLink = document.getElementById("linkOfSlider");
+    let sneakersLink = document.getElementById("linkOfSnikers");
+    let restaurantLink = document.getElementById("linkOfRestaurant");
+
+    let gitGame = document.getElementById("gitGame");
+    let gitSlider = document.getElementById("gitSlider");
+    let gitSneakers = document.getElementById("gitSneakers");
+    let gitRestaurant = document.getElementById("gitRestaurant");
+
+
+    let arrOfLinks = [gameLink, sliderLink, sneakersLink, restaurantLink, gitGame, gitSlider, gitSneakers, gitRestaurant];
+    arrOfLinks.map((el) => {
+        el.addEventListener("click", function () {
+            switch (el.id) {
+                case 'linkOfGame':
+                    document.location = "https://1985makarovdenis1985.github.io/New_CV_Game/dist/";
+                    break;
+                case 'linkOfSlider':
+                    document.location = "http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html";
+                    break;
+                case 'linkOfSnikers':
+                    document.location = "https://1985makarovdenis1985.github.io/CV/first/index.html";
+                    break;
+                case 'linkOfRestaurant':
+                    document.location = "https://1985makarovdenis1985.github.io/CV/second/index.html";
+                    break;
+            }
+        })
+    })
+}
+
+links();
+
+// http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html
+// https://1985makarovdenis1985.github.io/CV/game/index.html
+
 

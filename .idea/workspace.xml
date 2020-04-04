@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/save.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/save.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/modules/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/content.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +24,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -43,7 +45,10 @@
       <workItem from="1582294073902" duration="422000" />
       <workItem from="1582296200789" duration="28697000" />
       <workItem from="1583252509796" duration="28298000" />
-      <workItem from="1583330913755" duration="10094000" />
+      <workItem from="1583330913755" duration="10983000" />
+      <workItem from="1583942575177" duration="10837000" />
+      <workItem from="1585595900740" duration="830000" />
+      <workItem from="1585996837908" duration="36000" />
     </task>
     <servers />
   </component>
