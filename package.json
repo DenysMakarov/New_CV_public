@@ -36,6 +36,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "minimist": "^1.2.5",
     "normalize.css": "^8.0.1",
     "normalize.scss": "^0.1.0"
   }

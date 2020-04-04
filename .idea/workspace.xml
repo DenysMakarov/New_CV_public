@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="297c0f0a-177e-4199-b301-84111af0094a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/save.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/save.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/modules/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <workItem from="1583330913755" duration="10983000" />
       <workItem from="1583942575177" duration="10837000" />
       <workItem from="1585595900740" duration="830000" />
-      <workItem from="1585996837908" duration="36000" />
+      <workItem from="1585996837908" duration="448000" />
     </task>
     <servers />
   </component>
