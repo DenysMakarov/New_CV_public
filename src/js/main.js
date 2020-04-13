@@ -187,16 +187,31 @@ function links() {
         el.addEventListener("click", function () {
             switch (el.id) {
                 case 'linkOfGame':
-                    document.location = "https://1985makarovdenis1985.github.io/New_CV_Game/dist/";
+                    document.location = "https://1985makarovdenis1985.github.io/New_CV_Game/dist/index.html";
                     break;
                 case 'linkOfSlider':
+                    alert("This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
                     document.location = "http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html";
                     break;
                 case 'linkOfSnikers':
-                    document.location = "https://1985makarovdenis1985.github.io/CV/first/index.html";
+                    document.location = "https://1985makarovdenis1985.github.io/New_CV_SneakersShop/dist/index.html";
                     break;
                 case 'linkOfRestaurant':
-                    document.location = "https://1985makarovdenis1985.github.io/CV/second/index.html";
+                    document.location = "https://1985makarovdenis1985.github.io/New_CV_restaurant/dist/";
+                    break;
+
+                case 'gitGame':
+                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_Game";
+                    break;
+                case 'gitSlider':
+                    alert("This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
+                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_slider";
+                    break;
+                case 'gitSneakers':
+                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_SneakersShop";
+                    break;
+                case 'gitRestaurant':
+                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_restaurant";
                     break;
             }
         })
