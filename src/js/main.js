@@ -190,7 +190,7 @@ function links() {
                     document.location = "https://1985makarovdenis1985.github.io/New_CV_Game/dist/index.html";
                     break;
                 case 'linkOfSlider':
-                    alert("This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
+                    alert("This link from www.codester.com where slider is sold. This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
                     document.location = "http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html";
                     break;
                 case 'linkOfSnikers':
