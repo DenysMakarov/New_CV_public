@@ -21,6 +21,27 @@ setTimeout(function () {
 }, 1000);
 
 
+
+function contactPanel(){
+    const arrContacts = Array.from(document.getElementsByClassName("icon_item"))
+    const footerTextInfo = document.getElementById("footer_text_inform")
+    const footerBlockTop = document.getElementById("footer_block_top")
+
+    arrContacts.map((el)=>{
+        el.addEventListener("mouseover", (e)=>{
+            console.log(e.target.dataset.info)
+            footerTextInfo.innerText = e.target.dataset.info;
+            footerTextInfo.style.opacity = "0";
+            footerTextInfo.style.animationName = "none";
+            setTimeout(()=>{
+                footerTextInfo.style.animationName = "footer_block_mouseover_animation"
+            },0)
+        })
+
+    })
+}
+contactPanel()
+
 ////  game cards  ////
 function cards_item_first(countSlide) {
     let cards = Array.from(document.getElementsByClassName("card"));
@@ -111,7 +132,7 @@ function restaurant_gadgets_appear() {
     }
 }
 
-function gitApear() {
+function gitAppear() {
     let gitArr = Array.from(document.getElementsByClassName("git"));
     let countMarginTop = 0
 
@@ -124,7 +145,7 @@ function gitApear() {
 cards_item_first(countSlide);
 snikers_gadgets_apear();
 restaurant_gadgets_appear();
-gitApear()
+gitAppear()
 
 function activeElements() {
     for (let i = 0; i < navHeaderBtn.length; i++) {
@@ -144,7 +165,7 @@ function changeSlideOnClick() {
             cards_item_first(countSlide);
             snikers_gadgets_apear();
             restaurant_gadgets_appear();
-            gitApear()
+            gitAppear()
         });
     });
 }
@@ -162,7 +183,7 @@ function changeOnWheel() {
         cards_item_first(countSlide);
         snikers_gadgets_apear();
         restaurant_gadgets_appear();
-        gitApear()
+        gitAppear()
     };
 }
 

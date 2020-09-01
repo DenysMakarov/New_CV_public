@@ -3,22 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="297c0f0a-177e-4199-b301-84111af0094a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/bg_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/bg_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/bg_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/day__1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/day__2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/day__3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/day__4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/disable/day__5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/modules/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/modules/keyframes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/keyframes.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +61,7 @@
       <workItem from="1589576132511" duration="882000" />
       <workItem from="1598438884131" duration="57000" />
       <workItem from="1598438980468" duration="530000" />
-      <workItem from="1598968536812" duration="5872000" />
+      <workItem from="1598968536812" duration="21622000" />
     </task>
     <servers />
   </component>
