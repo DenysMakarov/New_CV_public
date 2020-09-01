@@ -81,7 +81,7 @@ function snikers_gadgets_apear() {
     }
 }
 
-function restaurant_gadgets_apear() {
+function restaurant_gadgets_appear() {
     let ipadr = document.getElementById("box_fourth_ipad");
     let iphoner = document.getElementById("box_fourth_iphone");
 
@@ -123,7 +123,7 @@ function gitApear() {
 
 cards_item_first(countSlide);
 snikers_gadgets_apear();
-restaurant_gadgets_apear();
+restaurant_gadgets_appear();
 gitApear()
 
 function activeElements() {
@@ -143,14 +143,14 @@ function changeSlideOnClick() {
             activeElements();
             cards_item_first(countSlide);
             snikers_gadgets_apear();
-            restaurant_gadgets_apear();
+            restaurant_gadgets_appear();
             gitApear()
         });
     });
 }
 
 
-function chahgeOnWheel() {
+function changeOnWheel() {
 
     navHeaderBoxes.onwheel = function (e) {
         let speed = e.deltaY;
@@ -161,28 +161,30 @@ function chahgeOnWheel() {
         activeElements();
         cards_item_first(countSlide);
         snikers_gadgets_apear();
-        restaurant_gadgets_apear();
+        restaurant_gadgets_appear();
         gitApear()
     };
 }
 
 changeSlideOnClick();
-chahgeOnWheel();
+changeOnWheel();
 
 
 function links() {
     let gameLink = document.getElementById("linkOfGame");
     let sliderLink = document.getElementById("linkOfSlider");
-    let sneakersLink = document.getElementById("linkOfSnikers");
+    let sneakersLink = document.getElementById("linkOfSneakers");
     let restaurantLink = document.getElementById("linkOfRestaurant");
+    let reactLink = document.getElementById("linkOfReact");
 
     let gitGame = document.getElementById("gitGame");
     let gitSlider = document.getElementById("gitSlider");
     let gitSneakers = document.getElementById("gitSneakers");
     let gitRestaurant = document.getElementById("gitRestaurant");
+    let gitReact = document.getElementById("gitReact");
 
 
-    let arrOfLinks = [gameLink, sliderLink, sneakersLink, restaurantLink, gitGame, gitSlider, gitSneakers, gitRestaurant];
+    let arrOfLinks = [gameLink, sliderLink, sneakersLink, restaurantLink, reactLink, gitGame, gitSlider, gitSneakers, gitRestaurant, gitReact];
     arrOfLinks.map((el) => {
         el.addEventListener("click", function () {
             switch (el.id) {
@@ -193,11 +195,14 @@ function links() {
                     alert("This is library of MagicSlider which had been developed by me for 'Codester' market. This link from www.codester.com where library is selling now. This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
                     document.location = "http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html";
                     break;
-                case 'linkOfSnikers':
+                case 'linkOfSneakers':
                     document.location = "https://1985makarovdenis1985.github.io/New_CV_SneakersShop/dist/index.html";
                     break;
                 case 'linkOfRestaurant':
                     document.location = "https://1985makarovdenis1985.github.io/New_CV_restaurant/dist/";
+                    break;
+                case 'linkOfReact':
+                    document.location = "https://1985makarovdenis1985.github.io/New_CV_React/dist/#/";
                     break;
 
                 case 'gitGame':
@@ -212,6 +217,9 @@ function links() {
                     break;
                 case 'gitRestaurant':
                     document.location = "https://github.com/1985MakarovDenis1985/New_CV_restaurant";
+                    break;
+                case 'gitReact':
+                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_React";
                     break;
             }
         })

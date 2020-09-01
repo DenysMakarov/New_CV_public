@@ -16,7 +16,6 @@
   position: absolute;
   height: 50%;
   margin-top: 15%;
-  //border: 1px solid red;
   margin-left: 3rem;
 }
 
@@ -70,11 +69,9 @@
 ///// section
 
 .section_content {
-  //border: 1px solid red;
   width: 50%;
   height: 60%;
   position: absolute;
-  right: 0;
   top: 20%;
   right: 10%;
   perspective: 500px;
@@ -85,7 +82,6 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  //background-image: url(../img/1.jpg);
   background-position: 50% 0;
   -webkit-background-size: cover;
   background-size: cover;
@@ -93,11 +89,6 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   cursor: pointer;
-
-  //-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  //-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  //box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-
   opacity: 0;
   right: -100%;
   transform: rotateX(0deg) rotateY(28deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
@@ -120,24 +111,10 @@
   }
 }
 
-.section_box:nth-child(3) {
-  //background-image: url(../img/snikers/SportStore.jpg);
-}
-
-.section_box:nth-child(4) {
-  //background-image: url(../img/4.jpg);
-}
-
-.section_box:nth-child(5) {
-  display: block;
-  //background-image: url(../img/5.jpg);
-}
-
 
 .section_box_cover {
   width: 100%;
   height: 100%;
-  //background-image: url(../img/game/bg_game.jpg);
   border-radius: 10px;
   perspective: 500px;
 
@@ -160,7 +137,6 @@
 
   .card {
     transform: rotateX(90deg) rotateY(10deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
-    //transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
     cursor: pointer;
     width: 20%;
     height: 40%;
@@ -169,9 +145,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     bottom: 170px;
-    //bottom: -15px;
     opacity: 0;
-    //opacity: 1;
     transition: .3s;
     transition-delay: 4s;
     -webkit-background-size: cover;
@@ -181,45 +155,35 @@
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
-    //animation-name: card_apear;
-    //animation-fill-mode: forwards;
-    //animation-duration: 0.5s;
-    //animation-delay: 0.8s;
-
 
     &:nth-child(1) {
       background-image: url(../img/game/card_1.jpg);
       margin-left: -10%;
       z-index: 100;
-      //animation-delay: 0.9s;
     }
 
     &:nth-child(2) {
       background-image: url(../img/game/card_2.jpg);
       margin-left: 1%;
       z-index: 90;
-      //animation-delay: 0.8s;
     }
 
     &:nth-child(3) {
       background-image: url(../img/game/card_3.jpg);
       margin-left: 12%;
       z-index: 80;
-      //animation-delay: 0.7s;
     }
 
     &:nth-child(4) {
       background-image: url(../img/game/card_4.jpg);
       margin-left: 23%;
       z-index: 70;
-      //animation-delay: 0.6s;
     }
 
     &:nth-child(5) {
       background-image: url(../img/game/card_5.jpg);
       margin-left: 34%;
       z-index: 60;
-      //animation-delay: 0.5s;
     }
 
     &:nth-child(6) {
@@ -270,7 +234,7 @@
 }
 
 
-//// Snikers store //////
+//// Sneakers store //////
 
 .section_box_third {
   box-sizing: border-box;
@@ -283,9 +247,17 @@
   .section_box_third_cover {
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: scroll;
     border-radius: 10px;
     transition: 0.2s;
+
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.0);
+    }
+
 
     &:hover {
       margin-top: -15px;
@@ -298,7 +270,6 @@
       background-size: 100% 100%;
       background-image: url(../img/snikers/snk_full.jpg);
       perspective: 500px;
-      overflow-x: hidden;
     }
 
   }
@@ -319,9 +290,14 @@
     transform: rotateX(0deg) rotateY(-80deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
     opacity: 0;
     transition-delay: .2s;
-    overflow: auto;
     border: 1px solid gray;
-    overflow-x: hidden;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.0);
+    }
 
 
     .box_third_ipad_cover {
@@ -331,7 +307,6 @@
 
       background-image: url(../img/snikers/snk_full.jpg);
       background-size: 100% 100%;
-      overflow-x: hidden;
     }
   }
 
@@ -347,8 +322,6 @@
       height: 600%;
       background-image: url(../img/snikers/snk_iphone.jpg);
       background-size: 100% 100%;
-      overflow-x: hidden;
-
     }
   }
 
@@ -364,7 +337,6 @@
     bottom: -7%;
     left: 57%;
     opacity: 1;
-    overflow-x: hidden;
   }
 }
 
@@ -374,19 +346,22 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  overflow: auto;
   position: absolute;
   transition: 0.2s;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  overflow-x: hidden;
+  -webkit-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+  overflow: scroll;
 
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.0);
+  }
 
   &:hover {
     margin-top: -15px;
   }
-
 
   .box_fourth_content {
     width: 100%;
@@ -415,7 +390,13 @@
   transition-delay: .2s;
   overflow: auto;
   border: 1px solid gray;
-  overflow-x: hidden;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.0);
+  }
 
 
   .box_fourth_ipad_cover {
@@ -423,7 +404,12 @@
     height: 450%;
     background-image: url(../img/restaurant/restaurant.jpg);
     background-size: cover;
-    overflow-x: hidden;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: rgba(255, 255, 255, 0.0);
+    }
 
   }
 }
@@ -441,7 +427,6 @@
     background-image: url(../img/restaurant/restaurant_iphone.jpg);
     background-size: contain;
     overflow-x: hidden;
-
   }
 }
 
@@ -458,6 +443,82 @@
   left: 35%;
   opacity: 1;
 }
+
+//// React Redux
+
+//.section_box_react{
+//  position: absolute;
+//  transition: .3s;
+
+  .section_box_react_cover{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border: 1px solid red;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/react/react_PC.jpg);
+    background-size: contain;
+    transition: 0.3s;
+    top: 0;
+
+
+    &:hover{
+      top: -20px;
+    }
+  }
+
+//}
+
+.box_react_ipad, .box_react_iphone{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+  border-radius: 10px;
+  bottom: -5%;
+  left: -10%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background-size: contain;
+  transition: .3s;
+  overflow: scroll;
+
+  &:hover {
+    bottom: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.0);
+  }
+
+  .box_react_ipad_cover{
+    width: 100%;
+    height: 333%;
+    background-image: url(../img/react/react_iPad.jpg);
+  }
+}
+
+.box_react_iphone {
+  width: 20%;
+  height: 44%;
+  left: 35%;
+  bottom: -8%;
+
+  .box_react_iphone_cover {
+    width: 100%;
+    height: 280%;
+    background-image: url(../img/react/react_iPhone.jpg);
+    background-size: contain;
+  }
+}
+
+
 
 //// git ////
 
