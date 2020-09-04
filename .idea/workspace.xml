@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="297c0f0a-177e-4199-b301-84111af0094a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/modules/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/modules/content.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +29,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -57,7 +58,10 @@
       <workItem from="1598438884131" duration="57000" />
       <workItem from="1598438980468" duration="530000" />
       <workItem from="1598968536812" duration="23091000" />
-      <workItem from="1599050707769" duration="205000" />
+      <workItem from="1599050707769" duration="1677000" />
+      <workItem from="1599059547540" duration="320000" />
+      <workItem from="1599060795625" duration="66000" />
+      <workItem from="1599215705591" duration="675000" />
     </task>
     <servers />
   </component>

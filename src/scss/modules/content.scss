@@ -542,8 +542,9 @@
   position: absolute;
   top: 7%;
   right: 10%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 1);
+  line-height: 60px;
 
   @media screen and (max-width: 1440px) {
     font-size: 1rem;
@@ -672,6 +673,17 @@
       }
     }
   }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.best_wishes{
+  font-family: 'Architects Daughter', cursive;
+  position: absolute;
+  left: 20%;
+  bottom: 3%;
+  font-size: 1.2rem;
+  color: white;
 }
 
 
