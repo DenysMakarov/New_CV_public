@@ -40,7 +40,14 @@ module.exports = {
                         }
                     }
                 }
+                // ,
+                // {
+                //     loader: 'svg-inline-loader'
+                // }
             ]
+        },{
+            test: /\.(svg)$/,
+            loader: 'svg-inline-loader'
         }, {
             test: /\.(eot|svg|ttf|woff|otf|woff2)$/,
             loader: 'file-loader',

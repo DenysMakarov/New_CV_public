@@ -4,7 +4,7 @@ let sectionBoxes = Array.from(document.getElementsByClassName("section_box"));
 let navHeaderBoxes = document.getElementById("header_nav_box");
 
 let countSlide = 0;
-
+console.log(navHeaderBtn)
 for (let i = 0; i < navHeaderBtn.length; i++) {
     navHeaderBtn[i].setAttribute("data-number_btn", i);
     sectionBoxes[i].setAttribute("data-number_section", i);
@@ -72,7 +72,7 @@ function cards_item_first(countSlide) {
     }
 }
 
-function snikers_gadgets_apear() {
+function sneakers_gadgets_appear() {
     let ipad = document.getElementById("box_third_ipad");
     let iphone = document.getElementById("box_third_iphone");
     ipad.addEventListener("mouseover", function () {
@@ -141,11 +141,11 @@ function gitAppear() {
         countMarginTop = countMarginTop + 85
     })
 }
-
 cards_item_first(countSlide);
-snikers_gadgets_apear();
+sneakers_gadgets_appear();
 restaurant_gadgets_appear();
 gitAppear()
+
 
 function activeElements() {
     for (let i = 0; i < navHeaderBtn.length; i++) {
@@ -163,9 +163,8 @@ function changeSlideOnClick() {
             countSlide = +el.dataset.number_btn;
             activeElements();
             cards_item_first(countSlide);
-            snikers_gadgets_apear();
+            sneakers_gadgets_appear();
             restaurant_gadgets_appear();
-            gitAppear()
         });
     });
 }
@@ -181,9 +180,8 @@ function changeOnWheel() {
         (countSlide == -1) ? countSlide = navHeaderBtn.length - 1 : countSlide = countSlide;
         activeElements();
         cards_item_first(countSlide);
-        snikers_gadgets_apear();
+        sneakers_gadgets_appear();
         restaurant_gadgets_appear();
-        gitAppear()
     };
 }
 
@@ -192,38 +190,59 @@ changeOnWheel();
 
 
 function links() {
-    let gameLink = document.getElementById("linkOfGame");
-    let sliderLink = document.getElementById("linkOfSlider");
-    let sneakersLink = document.getElementById("linkOfSneakers");
-    let restaurantLink = document.getElementById("linkOfRestaurant");
-    let reactLink = document.getElementById("linkOfReact");
-
-    let gitGame = document.getElementById("gitGame");
-    let gitSlider = document.getElementById("gitSlider");
-    let gitSneakers = document.getElementById("gitSneakers");
-    let gitRestaurant = document.getElementById("gitRestaurant");
-    let gitReact = document.getElementById("gitReact");
+    const gameLink = document.getElementById("linkOfGame");
+    const sliderLink = document.getElementById("linkOfSlider");
+    const sneakersLink = document.getElementById("linkOfSneakers");
+    const restaurantLink = document.getElementById("linkOfRestaurant");
+    const reactLink = document.getElementById("linkOfReact");
+    const galleryLink = document.getElementById("linkOfGallery");
 
 
-    let arrOfLinks = [gameLink, sliderLink, sneakersLink, restaurantLink, reactLink, gitGame, gitSlider, gitSneakers, gitRestaurant, gitReact];
+    const gameLinkTitle = document.getElementById("link_title_game");
+    const sliderLinkTitle = document.getElementById("link_title_slider");
+    const sneakersLinkTitle = document.getElementById("link_title_store");
+    const restaurantLinkTitle = document.getElementById("link_title_restaurant");
+    const reactLinkTitle = document.getElementById("link_title_react");
+    const galleryLinkTitle = document.getElementById("link_title_gallery");
+
+    const gitGame = document.getElementById("gitGame");
+    const gitSlider = document.getElementById("gitSlider");
+    const gitSneakers = document.getElementById("gitSneakers");
+    const gitRestaurant = document.getElementById("gitRestaurant");
+    const gitReact = document.getElementById("gitReact");
+    const gitGallery = document.getElementById("gitGallery");
+
+
+
+    const arrOfLinks = [gameLink, sliderLink, sneakersLink, restaurantLink, reactLink, galleryLink, gitGame, gitSlider, gitSneakers, gitRestaurant, gitReact, gitGallery, gameLinkTitle, reactLinkTitle, restaurantLinkTitle, sneakersLinkTitle, sliderLinkTitle, galleryLinkTitle];
     arrOfLinks.map((el) => {
         el.addEventListener("click", function () {
             switch (el.id) {
                 case 'linkOfGame':
+                case 'link_title_game':
                     document.location = "https://1985makarovdenis1985.github.io/New_CV_Game/dist/index.html";
                     break;
                 case 'linkOfSlider':
+                case 'link_title_slider':
                     alert("This is library of MagicSlider which had been developed by me for 'Codester' market. This link from www.codester.com where library is selling now. This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
                     document.location = "http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html";
                     break;
                 case 'linkOfSneakers':
+                case 'link_title_store':
                     document.location = "https://1985makarovdenis1985.github.io/New_CV_SneakersShop/dist/index.html";
                     break;
                 case 'linkOfRestaurant':
+                case 'link_title_restaurant':
                     document.location = "https://1985makarovdenis1985.github.io/New_CV_restaurant/dist/";
                     break;
                 case 'linkOfReact':
+                case 'link_title_react':
                     document.location = "https://1985makarovdenis1985.github.io/New_CV_React/dist/#/";
+                    break;
+
+                case 'linkOfGallery':
+                case 'link_title_gallery':
+                    document.location = "https://1985makarovdenis1985.github.io/DevIT_img_gallary/dist/";
                     break;
 
                 case 'gitGame':
@@ -241,6 +260,9 @@ function links() {
                     break;
                 case 'gitReact':
                     document.location = "https://github.com/1985MakarovDenis1985/New_CV_React";
+                    break;
+                case 'gitGallery':
+                    document.location = "https://github.com/1985MakarovDenis1985/DevIT_img_gallary";
                     break;
             }
         })

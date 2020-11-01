@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
-
-
+//@import "../scss/fontawesome";
+//@import "../scss/solid";
 
 //// header
 .header {
@@ -19,8 +19,13 @@
 .header_nav_box {
   position: absolute;
   height: 50%;
-  margin-top: 15%;
+  margin-top: 13%;
   margin-left: 3rem;
+  width: 33%;
+}
+
+.project-stack{
+  font-size: 21px;
 }
 
 .nav_head {
@@ -534,6 +539,36 @@
 }
 
 
+
+//// Gallery ////
+
+.section_gallery{
+  background-image: url(../../src/img/gallery/gallery.png);
+  position: absolute;
+  transition: .3s;
+  top: 0;
+
+  &:hover{
+    top: -5%;
+  }
+
+  .desc_about_completed{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 40%;
+    height: 21%;
+    border-radius: 5px;
+    border: 1px solid red;
+    line-height: 75%;
+
+    p{
+      text-align: center;
+      color: red
+    }
+  }
+}
+
 //// git ////
 
 .git_link_box {
@@ -613,6 +648,8 @@
     }
   }
 
+
+
   .footer_block_bottom {
     display: flex;
     justify-content: left;
@@ -638,15 +675,20 @@
       animation-fill-mode: forwards;
       opacity: 0;
 
+
       &:nth-child(1) {
         animation-delay: .1s;
       }
+      
+
       &:nth-child(2) {
         animation-delay: .2s;
       }
+
       &:nth-child(3) {
         animation-delay: .3s;
       }
+
       &:nth-child(4) {
         animation-delay: .4s;
       }
@@ -676,8 +718,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
-.best_wishes{
+.best_wishes {
   font-family: 'Architects Daughter', cursive;
   position: absolute;
   left: 20%;
@@ -685,6 +726,7 @@
   font-size: 1.2rem;
   color: white;
 }
+
 
 
 
