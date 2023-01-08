@@ -19,7 +19,7 @@
 .header_nav_box {
   position: absolute;
   height: 50%;
-  margin-top: 13%;
+  margin-top: 10%;
   margin-left: 3rem;
   width: 33%;
 }
@@ -610,6 +610,27 @@
       right: 10px;
     }
   }
+
+  .gitWrc{
+    height: 45%;
+
+    & div{
+      display: flex;
+      margin: auto;
+      justify-content: space-evenly;
+      width: 90%;
+      height: 40%;
+
+      & .btn-wrc-git{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 45%;
+        font-size: 17px;
+      }
+    }
+  }
 }
 
 .footer {
@@ -721,12 +742,57 @@
 .best_wishes {
   font-family: 'Architects Daughter', cursive;
   position: absolute;
-  left: 20%;
+  left: 25%;
   bottom: 3%;
   font-size: 1.2rem;
   color: white;
 }
 
+.wrc-desc{
+  color: #ffffff !important;
+  font-size: 14px!important;
+  width: 155%;
+  margin-top: 5px!important;
+  margin-bottom: 5px!important;
+}
 
+.wrc-btn-block{
+  //border: 1px solid red;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  position: absolute;
+  top: 60px;
+  left: 2%;
+  animation: btn-appear;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: .8s;
+}
 
+s.wrc-btn {
+  border: 1px solid red;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+}
 
+.git-wrc{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-wrc-git{
+  width: 45%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}

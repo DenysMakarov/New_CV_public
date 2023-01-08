@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/Title.png" type="image/x-icon">
-<!--    <link rel="stylesheet" href="scss/@fortawesome/fontawesome-free/css/all.min.css">-->
+    <!--    <link rel="stylesheet" href="scss/@fortawesome/fontawesome-free/css/all.min.css">-->
     <script src="https://kit.fontawesome.com/264e7aaf11.js" crossorigin="anonymous"></script>
 
 </head>
@@ -14,34 +14,45 @@
 <div class="header">
     <div class="header_nav_box" id="header_nav_box">
 
-        <div class="nav_head head_first">
+        <div class="nav_head head_first" style="margin-bottom: 20px; position: relative; width: 100%">
             <p class="head_p head_first_p">02</p>
-            <h2 id="link_title_game" class="head_h2 head_first_h">Game</h2>
-        </div>
-        <div class="nav_head head_first">
-            <p class="head_p head_first_p">03</p>
-            <h2 id="link_title_slider" class="head_h2 head_first_h">Slider</h2>
-        </div>
-        <div class="nav_head head_first">
-            <p class="head_p head_first_p">04</p>
-            <h2 id="link_title_store" class="head_h2 head_first_h">Sneakers store</h2>
-        </div>
-        <div class="nav_head head_first">
-            <p class="head_p head_first_p">05</p>
-            <h2 id="link_title_restaurant" class="head_h2 head_first_h">Restaurant</h2>
-        </div>
-
-        <div class="nav_head head_first">
-            <p class="head_p head_first_p">06</p>
-            <h2 id="link_title_react" class="head_h2 head_first_h new_work_cover">WRC || <span class="project-stack">React - Redux</span>
-                <span class="new_work">NEW!</span>
+            <h2 id="link_title_game" class="head_h2 head_first_h">Game
+                <p class="wrc-desc" style="width: 500px;">Js, Html, Scss</p>
             </h2>
         </div>
+        <div class="nav_head head_first" style="margin-bottom: 20px; position: relative; width: 100%">
+            <p class="head_p head_first_p">03</p>
+            <h2 id="link_title_slider" class="head_h2 head_first_h">Slider Library
+                <p class="wrc-desc">Js, Html, CSS - You can buy it on www.codester.com </p>
+            </h2>
+        </div>
+        <div class="nav_head head_first" style="margin-bottom: 25px">
+            <p class="head_p head_first_p">04</p>
+            <h2 id="link_title_store" class="head_h2 head_first_h" style="position: relative">Sneakers store
+                <!--                <span class="new_work-sneakers" >redeveloping now!</span>-->
+                <!--                <p class="wrc-desc" style="width: 300px; ">Node.js, Express ,Handlebars, authentication <span style="color: red">redeveloping now!</span></p>-->
+                <span class="new_work" style="width: 300px; left: 160%">
+                    <!-- <span style="font-size: 14px; padding-right: 10px;">hasn`t completed yet(</span> -->
+                </span>
+                <p class="wrc-desc" style="width: 500px;">Node.js, Express ,Handlebars, Jwt </p>
+            </h2>
+        </div>
+        <div class="nav_head head_first" style="margin-bottom: 20px; position: relative; width: 100%">
+            <p class="head_p head_first_p">05</p>
+            <h2 id="link_title_restaurant" class="head_h2 head_first_h">Restaurant
+                <p class="wrc-desc">Just Html & CSS</p>
+            </h2>
 
-        <div class="nav_head head_first">
-            <p class="head_p head_first_p">07</p>
-            <h2 id="link_title_gallery" class="head_h2 head_first_h new_work_cover">Gallery || <span class="project-stack">React - Redux - IndexedDB</span>
-<!--                <span class="new_work">NEW!</span>-->
+        </div>
+
+        <div class="nav_head head_first" style="margin-bottom: 20px; position: relative; width: 100%">
+            <p class="head_p head_first_p">06</p>
+            <h2 style="width: 45%;" id="link_title_react" class="head_h2 head_first_h new_work_cover">WRC
+                <!--                <span class="new_work" >-->
+                <!--                    &lt;!&ndash; <span style="font-size: 14px; padding-right: 10px;">hasn`t completed yet(</span> &ndash;&gt;-->
+                <!--                     NEW!-->
+                <!--                </span>-->
+                <p class="wrc-desc">Java, SQl, Spring-Boot, Hibernate, Spring-Security || React, Redux</p>
             </h2>
         </div>
 
@@ -106,23 +117,23 @@
             </div>
         </div>
 
-        <div class="section_box section_gallery" id="linkOfGallery">
-            <div class="desc_about_completed">
-                <p>Has not completed yet...</p>
-                <p>Has been developing now...</p>
-                <p>but working :)</p>
-            </div>
-        </div>
-
-
         <div class="section_box section_box_fifth">
             <div class="git_link_box" id="git_link_box">
                 <h2 class="git" id="gitGame">Game Git</h2>
                 <h2 class="git" id="gitSlider">Slider Git</h2>
                 <h2 class="git" id="gitSneakers">Sneakers Git</h2>
                 <h2 class="git" id="gitRestaurant">Restaurant Git</h2>
-                <h2 class="git" id="gitReact">WRC Sport</h2>
-                <h2 class="git" id="gitGallery">Gallery</h2>
+                <h2 class="git gitWrc" id="gitReact ">WRC Sport
+                    <div>
+                        <div class="btn-wrc-git"
+                             onclick="document.location='https://github.com/DenysMakarov/CV_BackAnd_WRC'">Back-End
+                        </div>
+                        <div class="btn-wrc-git"
+                             onclick="document.location='https://github.com/DenysMakarov/CV_FrontEnd_WRC'">Front-End
+                        </div>
+                    </div>
+
+                </h2>
 
             </div>
         </div>
@@ -137,12 +148,11 @@
             <div class="icon_blocks icon_blocks_first" data-info="live:beae20f7dab8e21a">
                 <a href="skype:beae20f7dab8e21a?chat" data-info="live:beae20f7dab8e21a">
                     <i class="fab fa-skype icon_item" data-info="live:beae20f7dab8e21a"></i>
-<!--                    <img class="icon_svg" src="img/address-book-solid.svg" alt=""/>-->
                 </a>
             </div>
-            <div class="icon_blocks icon_blocks_second" data-info="makarovdenys1985@gmail.com">
-                <a href="mailto:makarovdenys1985@gmail.com" data-info="makarovdenys1985@gmail.com">
-                    <i class="far fa-envelope icon_item" data-info="makarovdenys1985@gmail.com"></i>
+            <div class="icon_blocks icon_blocks_second" data-info="mdamywork@gmail.com">
+                <a href="mailto:mdamywork@gmail.com" data-info="mdamywork@gmail.com">
+                    <i class="far fa-envelope icon_item" data-info="mdamywork@gmail.com"></i>
                 </a>
             </div>
             <div class="icon_blocks icon_blocks_third" data-info="click on the icon to go to my page">
@@ -151,15 +161,21 @@
                     <i class="fab fa-facebook-square icon_item" data-info="Click on the icon to go to my page"></i>
                 </a>
             </div>
-            <div class="icon_blocks icon_blocks_third" data-info="+3(050)7222855">
-                <a href="tel:+3(050)7222855" data-info="+3(050)7222855">
-                    <i class="fas fa-mobile-alt icon_item" data-info="+3(050)7222855"></i>
+            <div class="icon_blocks icon_blocks_third" data-info="825-43-777-28">
+                <a href="tel:053-92-40-943" data-info="825-43-777-28">
+                    <i class="fas fa-mobile-alt icon_item" data-info="825-43-777-28"></i>
+                </a>
+            </div>
+            <div class="icon_blocks icon_blocks_third">
+                <a href="https://www.linkedin.com/in/denys-makarov-4793a41ba/"
+                   data-info="click on the icon to go to my page">
+                    <img data-info="Click on the icon to go to my page" style="background-color: white"
+                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABKUlEQVRYhe3WoU7DUBTG8R+wkKmJCQQJM2gS/AyCd0DjkbwG78Ar4LYhSTA4EGgsYhZGRoZoC+3Gut3u0iD6JTftuen5+r/ntieXRo3+qXoYYYLZhmOSevVCAG4jvHh+DEMAspV3Q5KWqJt6vYckZdSZOuijXRFi3i8ooYOXNH7ATt0AfcW93K8boC1Z+Qw32KobgKTsVVa+EqC1psFlep3iCns4T+ee8IwLHOIV17ivCItF4ix+S+Pj3NwdxorfySdOS/yiAmRjHmL4S/6CtkOoSmBPJA3nLDd/tKnpuhV4zD3X8tNFJyV+34pRgXHufpqD3F0nOdYWlMV/DrCRGoBlCm4cVf2WVeAjvcY6kFD8LVdqJP6RbBAC0JO00liH0gEOQgAaNapNXxMmsm+OwFLNAAAAAElFTkSuQmCC">
                 </a>
             </div>
         </div>
     </div>
-
-    <div class="best_wishes"> Best wishes, Denys Makarov</div>
+    <div class="best_wishes"> 2018 - Best wishes, Denys Makarov !!!</div>
 
 </div>
 

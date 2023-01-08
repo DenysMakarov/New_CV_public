@@ -4,7 +4,6 @@ let sectionBoxes = Array.from(document.getElementsByClassName("section_box"));
 let navHeaderBoxes = document.getElementById("header_nav_box");
 
 let countSlide = 0;
-console.log(navHeaderBtn)
 for (let i = 0; i < navHeaderBtn.length; i++) {
     navHeaderBtn[i].setAttribute("data-number_btn", i);
     sectionBoxes[i].setAttribute("data-number_section", i);
@@ -25,7 +24,6 @@ setTimeout(function () {
 function contactPanel(){
     const arrContacts = Array.from(document.getElementsByClassName("icon_item"))
     const footerTextInfo = document.getElementById("footer_text_inform")
-    const footerBlockTop = document.getElementById("footer_block_top")
 
     arrContacts.map((el)=>{
         el.addEventListener("mouseover", (e)=>{
@@ -47,7 +45,7 @@ function cards_item_first(countSlide) {
     let cards = Array.from(document.getElementsByClassName("card"));
     let countDelay = 1.1;
 
-    if (countSlide == 0) {
+    if (countSlide === 0) {
         cards.map((el) => {
             el.style.transitionDelay = countDelay + "s";
             countDelay = countDelay - 0.1;
@@ -62,7 +60,7 @@ function cards_item_first(countSlide) {
                 el.style.bottom = -15 + "px"
             })
         })
-    } else if (countSlide != 0) {
+    } else if (countSlide !== 0) {
         cards.map((el) => {
             el.style.transitionDelay = 0 + "s";
             el.classList.remove("activeCards");
@@ -171,7 +169,6 @@ function changeSlideOnClick() {
 
 
 function changeOnWheel() {
-
     navHeaderBoxes.onwheel = function (e) {
         let speed = e.deltaY;
         (speed > 0) ? countSlide = countSlide + 1 : countSlide = countSlide;
@@ -195,7 +192,7 @@ function links() {
     const sneakersLink = document.getElementById("linkOfSneakers");
     const restaurantLink = document.getElementById("linkOfRestaurant");
     const reactLink = document.getElementById("linkOfReact");
-    const galleryLink = document.getElementById("linkOfGallery");
+    // const galleryLink = document.getElementById("linkOfGallery");
 
 
     const gameLinkTitle = document.getElementById("link_title_game");
@@ -203,67 +200,69 @@ function links() {
     const sneakersLinkTitle = document.getElementById("link_title_store");
     const restaurantLinkTitle = document.getElementById("link_title_restaurant");
     const reactLinkTitle = document.getElementById("link_title_react");
-    const galleryLinkTitle = document.getElementById("link_title_gallery");
+    // const galleryLinkTitle = document.getElementById("link_title_gallery");
 
     const gitGame = document.getElementById("gitGame");
     const gitSlider = document.getElementById("gitSlider");
     const gitSneakers = document.getElementById("gitSneakers");
     const gitRestaurant = document.getElementById("gitRestaurant");
     const gitReact = document.getElementById("gitReact");
-    const gitGallery = document.getElementById("gitGallery");
+    // const gitGallery = document.getElementById("gitGallery");
 
 
 
-    const arrOfLinks = [gameLink, sliderLink, sneakersLink, restaurantLink, reactLink, galleryLink, gitGame, gitSlider, gitSneakers, gitRestaurant, gitReact, gitGallery, gameLinkTitle, reactLinkTitle, restaurantLinkTitle, sneakersLinkTitle, sliderLinkTitle, galleryLinkTitle];
+    const arrOfLinks = [gameLink, sliderLink, sneakersLink, restaurantLink, reactLink, gitGame, gitSlider, gitSneakers, gitRestaurant, gitReact, gameLinkTitle, reactLinkTitle, restaurantLinkTitle, sneakersLinkTitle, sliderLinkTitle];
     arrOfLinks.map((el) => {
         el.addEventListener("click", function () {
             switch (el.id) {
                 case 'linkOfGame':
                 case 'link_title_game':
-                    document.location = "https://1985makarovdenis1985.github.io/New_CV_Game/dist/index.html";
+                    document.location = "https://DenysMakarov.github.io/New_CV_Game/dist/index.html";
                     break;
                 case 'linkOfSlider':
                 case 'link_title_slider':
-                    alert("This is library of MagicSlider which had been developed by me for 'Codester' market. This link from www.codester.com where library is selling now. This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
-                    document.location = "http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html";
+                    // alert("This is library of MagicSlider which had been developed by me for 'Codester' market. This link from www.codester.com where library is selling now. This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
+                    // document.location = "http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html";
+                    document.location = "https://DenysMakarov.github.io/New_CV_slider/dist/index.html"
                     break;
                 case 'linkOfSneakers':
                 case 'link_title_store':
-                    document.location = "https://1985makarovdenis1985.github.io/New_CV_SneakersShop/dist/index.html";
+                    document.location = "https://DenysMakarov.github.io/New_CV_SneakersShop/dist/index.html";
                     break;
                 case 'linkOfRestaurant':
                 case 'link_title_restaurant':
-                    document.location = "https://1985makarovdenis1985.github.io/New_CV_restaurant/dist/";
+                    document.location = "https://DenysMakarov.github.io/New_CV_restaurant/dist/";
                     break;
                 case 'linkOfReact':
                 case 'link_title_react':
-                    document.location = "https://1985makarovdenis1985.github.io/New_CV_React/dist/#/";
+                    document.location = "https://DenysMakarov.github.io/New_CV_React/dist/#/";
                     break;
 
-                case 'linkOfGallery':
-                case 'link_title_gallery':
-                    document.location = "https://1985makarovdenis1985.github.io/DevIT_img_gallary/dist/";
-                    break;
+                // case 'linkOfGallery':
+                // case 'link_title_gallery':
+                //     document.location = "https://DenysMakarov.github.io/DevIT_img_gallary/dist/";
+                //     break;
 
                 case 'gitGame':
                     document.location = "https://github.com/1985MakarovDenis1985/New_CV_Game";
                     break;
                 case 'gitSlider':
-                    alert("This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
-                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_slider";
+                    // alert("This slider works as a library. You can connect it in your personal code where you want. Instructions included into folder 'LIBRARY' of Git link");
+                    document.location = "https://github.com/DenysMakarov/New_CV_slider";
+                    // document.location = "https://DenysMakarov.github.io/New_CV_slider/dist/index.html"
                     break;
                 case 'gitSneakers':
-                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_SneakersShop";
+                    document.location = "https://github.com/DenysMakarov/New_CV_SneakersShop";
                     break;
                 case 'gitRestaurant':
-                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_restaurant";
+                    document.location = "https://github.com/DenysMakarov/New_CV_restaurant";
                     break;
                 case 'gitReact':
-                    document.location = "https://github.com/1985MakarovDenis1985/New_CV_React";
+                    document.location = "https://github.com/DenysMakarov/CV_FrontEnd_WRC";
                     break;
-                case 'gitGallery':
-                    document.location = "https://github.com/1985MakarovDenis1985/DevIT_img_gallary";
-                    break;
+                // case 'gitGallery':
+                //     document.location = "https://github.com/DenysMakarov/DevIT_img_gallary";
+                //     break;
             }
         })
     })
@@ -272,6 +271,6 @@ function links() {
 links();
 
 // http://www.codester.com/index.php?url=items/preview/20183/magicslider-javascript-css-html
-// https://1985makarovdenis1985.github.io/CV/game/index.html
+
 
 
